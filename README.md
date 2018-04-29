@@ -41,10 +41,10 @@ AWSIoTFullAccess
 In the AWS IoT console choose Secure, choose Policies and create a policy.
 
 In the Add statements section, choose Advanced mode. 
-
-{ \\
-    "Version": "2012-10-17", \\
-    "Statement": [ \\
+<b>
+{ 
+    "Version": "2012-10-17", 
+    "Statement": [
     {
         "Effect": "Allow",
         "Action": "iot:Connect",
@@ -67,7 +67,7 @@ In the Add statements section, choose Advanced mode.
     }
     ]
 }
-
+	</b>
 
 ## Things
 
