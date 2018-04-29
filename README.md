@@ -34,8 +34,9 @@ Choose Attach existing policies directly.
 
 In the search box, type:
 
-AmazonFreeRTOSFullAccess 
-AWSIoTFullAccess
+_AmazonFreeRTOSFullAccess_
+_AWSIoTFullAccess_
+
 
 ## Policies
 
@@ -78,6 +79,7 @@ In the Add statements section, choose Advanced mode.
 
 </b>
 
+
 ## Things
 
 In  the AWS IoT console go to Manage and then create a single Things in this way: 
@@ -94,28 +96,33 @@ Choose Attach a policy to attach.
 
 Choose the policy you just created and choose Register thing.
 
+
 ## Setting System workbench 
 
 Import the Amazon FreeRTOS Sample Code into the STM32 System Workbench
 
-Copy your AWS IoT endpoint from the Endpoint text box. It should look like <1234567890123>.iot.<us-east-1>.amazonaws.com.
+Copy your AWS IoT endpoint from the Endpoint text box. It should look like *<1234567890123>.iot.<us-east-1>.amazonaws.com*.
 
-In aws_clientcredential.h set clientcredentialMQTT_BROKER_ENDPOINT to your AWS IoT endpoint.
+In _aws_clientcredential.h_ set _clientcredentialMQTT_BROKER_ENDPOINT_ to your AWS IoT endpoint.
+
 
 ## IoT Credential 
 
-Go to : <BASE_FOLDER>\demos\common\devmode_key_provisioning\CertificateConfigurationTool\CertificateConfigurator.html.
+Go to : 
+
+_<BASE_FOLDER>\demos\common\devmode_key_provisioning\CertificateConfigurationTool\CertificateConfigurator.html._
 
 Under Certificate PEM file, choose the <ID>-certificate.pem.crt you downloaded from the AWS IoT console.
 
 Under Private Key PEM file, choose the <ID>-private.pem.key you downloaded from the AWS IoT console.
 
-Choose Generate and save aws_clientcredential_keys.h, and then save the file in <BASE_FOLDER>\demos\common\include.
+Choose Generate and save _aws_clientcredential_keys.h_, and then save the file in _<BASE_FOLDER>\demos\common\include_.
+
 
 ## Running the example 
 
 In the AWS IoT console go to Test
-In the Subscription topic text box, type freertos/demos/echo and then choose Subscribe to topic.
+In the Subscription topic text box, type _freertos/demos/echo_ and then choose Subscribe to topic.
 
 
 
