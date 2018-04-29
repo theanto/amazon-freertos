@@ -41,6 +41,7 @@ AWSIoTFullAccess
 In the AWS IoT console choose Secure, choose Policies and create a policy.
 
 In the Add statements section, choose Advanced mode. 
+<Enter>
 <b>
 { 
     "Version": "2012-10-17", 
