@@ -46,7 +46,7 @@ In the Add statements section, choose Advanced mode.
 
 
 <b>
-	
+
 {	
 
     "Version": "2012-10-17",     
@@ -73,7 +73,10 @@ In the Add statements section, choose Advanced mode.
          "Resource": "arn:aws:iot:<aws-region>:<aws-account-id>:*"
     }
     ]
-}</b>
+} 
+
+
+</b>
 
 ## Things
 
