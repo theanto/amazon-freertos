@@ -35,6 +35,7 @@ Choose Attach existing policies directly.
 In the search box, type:
 
 _AmazonFreeRTOSFullAccess_
+
 _AWSIoTFullAccess_
 
 
